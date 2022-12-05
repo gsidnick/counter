@@ -38,7 +38,6 @@ class Counter {
    * @return {void}
    */
   initializeValue() {
-    console.log(this.options)
     if (this.options.start !== undefined &&
         this.options.start >= this.options.min &&
         this.options.start <= this.options.max) {
