@@ -10,7 +10,7 @@
 class Counter {
   /**
    * Creates a new counter
-   * @param {DOM Element} [container]
+   * @param {Element} [container]
    * @param {object} [options]
    * @return {Counter}
    */
