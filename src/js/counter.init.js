@@ -3,14 +3,16 @@ const container2 = document.querySelector('#counter-2')
 const container3 = document.querySelector('#counter-3')
 const counter1 = new Counter(container1, {
   min: -20,
-  max: 0
+  max: 0,
 })
 const counter2 = new Counter(container2, {
   min: -10,
-  max: 10
+  max: 10,
+  start: 0
 })
 const counter3 = new Counter(container3, {
   min: 0,
-  max: 20
+  max: 20,
+  start: 10
 })
 

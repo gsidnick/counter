@@ -18,6 +18,7 @@ class Counter {
     const defaults = {
       min: 1,
       max: 10,
+      start: undefined,
       minusClass: 'counter__button-minus',
       plusClass: 'counter__button-plus',
       inputClass: 'counter__input',
@@ -25,10 +26,26 @@ class Counter {
 
     this.container = container
     this.options = this.extend(defaults, options)
-    this.value = this.options.min
 
+    this.initializeValue()
     this.initializeElements()
     this.initializeEvents()
+  }
+
+  /**
+   * Initialize value
+   * @private
+   * @return {void}
+   */
+  initializeValue() {
+    console.log(this.options)
+    if (this.options.start !== undefined &&
+        this.options.start >= this.options.min &&
+        this.options.start <= this.options.max) {
+        this.value = this.options.start
+    } else {
+      this.value = this.options.min
+    }
   }
 
   /**
