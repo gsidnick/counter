@@ -34,7 +34,6 @@ class Counter {
   /**
    * Initialize DOM elements
    * @private
-   * @param {DOM Element} [container]
    * @return {void}
    */
   initializeElements() {
