@@ -1,0 +1,126 @@
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  width: 140px;
+  height: 40px;
+  border-radius: 4px;
+  /*box-shadow: 0 2px 10px #0d191c;*/
+}
+
+.counter__input {
+  font-family: Mulish, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1d3a47;
+  text-align: center;
+  padding: 5px;
+  width: 60px;
+  height: 40px;
+  border: none;
+  background-color: #eeeeee;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.counter__value:focus {
+  outline: none;
+  background-color: #ffffff;
+}
+
+.counter__value::-webkit-outer-spin-button,
+.counter__value::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.counter__button-minus,
+.counter__button-plus {
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+  transition: box-shadow 0.3s ease-in-out,
+              background-color 0.3s ease-in-out;
+  box-shadow: 0 0 0 3px transparent;
+}
+
+.counter__button-minus {
+  border-radius: 4px 0 0 4px;
+}
+
+.counter__button-plus {
+  border-radius: 0 4px 4px 0;
+}
+
+.counter__button-minus:hover {
+  background-color: #f8b8bd;
+}
+
+.counter__button-plus:hover {
+  background-color: #abf8ee;
+}
+
+.counter__button-minus:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #e6394688;
+}
+
+.counter__button-plus:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #2a9d8f88;
+}
+.counter__button-minus::before,
+.counter__button-plus::before,
+.counter__button-plus::after {
+  transition: background-color 0.3s ease-in-out;
+  background-color: #1d3a47;
+}
+
+.counter__button-minus:hover::before,
+.counter__button-minus:focus::before{
+  /*background-color: #e63946;*/
+}
+
+.counter__button-plus:hover::before,
+.counter__button-plus:focus::before,
+.counter__button-plus:hover::after,
+.counter__button-plus:focus::after {
+  /*background-color: #2a9d8f;*/
+}
+
+.counter__button-minus::before {
+  content: "";
+  width: 10px;
+  height: 2px;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: calc(50% - 5px);
+}
+
+.counter__button-plus::before,
+.counter__button-plus::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  position: absolute;
+}
+
+.counter__button-plus::before {
+  top: calc(50% - 1px);
+  left: calc(50% - 5px);
+}
+
+.counter__button-plus::after {
+  transform: rotate(90deg);
+  top: calc(50% - 1px);
+  left: calc(50% - 5px);
+}
+
