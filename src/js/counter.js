@@ -128,10 +128,7 @@ class Counter {
    * @return {boolean}
    */
   isNumber(value) {
-    if (!isNaN(Number(value))) {
-      return true
-    }
-    return false
+    return !isNaN(Number(value))
   }
 
   /**
@@ -141,10 +138,7 @@ class Counter {
    * @return {boolean}
    */
   isEmpty(value) {
-    if (value.trim() === '') {
-      return true
-    }
-    return false
+    return value.trim() === ''
   }
 
   /**
@@ -154,10 +148,7 @@ class Counter {
    * @return {boolean}
    */
   isRange(value) {
-    if (value >= this.options.min && value <= this.options.max) {
-      return true
-    }
-    return false
+    return value >= this.options.min && value <= this.options.max
   }
 
   /**
