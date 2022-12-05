@@ -35,6 +35,17 @@ body {
   margin: 20px 0 0 0;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__image {
+  width: 150px;
+  height: 150px;
+}
+
 .header__heading {
   font-family: Philosopher, "Times New Roman", serif;
   font-size: 48px;
