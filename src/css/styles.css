@@ -63,3 +63,24 @@ body {
   text-align: center;
   margin: 10px 0 20px 0;
 }
+
+@media screen and (max-width: 1199px) {
+  .wrapper {
+    padding: 30px 0;
+  }
+  .header__heading {
+    margin: 40px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .wrapper {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .wrapper {
+    width: 260px;
+  }
+}
